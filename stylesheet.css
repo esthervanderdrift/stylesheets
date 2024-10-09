@@ -1,0 +1,373 @@
+/* ----- Custom CSS Groenpand Energie Overstappen ----- */
+
+.supplier-color {
+	color: #83A544;
+}
+
+.supplier-color_g2n,.supplier-color_gn {
+  color: #BDD34D;
+}
+
+.supplier-color_gs {
+  color: #7D7F7C;
+}
+
+/* Header logo */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  height: calc(var(--header-height));
+}
+
+#supplierLogo {
+  margin: 0 auto;
+}
+
+#supplierLogo img {
+  display: block;
+  height: 40px;
+}
+
+/* Switches */
+.switch {
+	background-color: #EDEFEB;
+	height:unset;
+	border-color: #EDEFEB;
+	border-width: 2px;
+}
+
+.switch label {
+	color: #6C757D;
+}
+
+.switch input:checked + label, .BuddyRenoCheckbox .inputGroup input:checked ~ label {
+	color: #212934;
+}
+
+/* Steps */
+.StepProgress-item.is-done::after {
+	border-color: #83A544;
+	background-color: #83A544;
+}
+
+/* Dropdown */
+select {
+  background: #FFF;
+  color: #000;
+  border: 1px solid #000;
+  padding-left: 10px;
+}
+
+.selectFields::after {
+  background: #83A544;
+  border: 1px solid #83A544;
+  top: -3px;
+}
+
+.selectFields::after {
+  color: #FFF
+}
+
+/* Tooltip */
+i.fa-question-circle {
+  color: #212934;
+  }
+
+.html-tooltip {
+  background-color: #FFF;
+  color:#212934;
+  border: 2px solid #FD7811;
+}
+
+.html-tooltip a {
+  color:#83A544;
+  text-decoration: none;
+}
+
+#mainView > section, #mainView > div, #main > nav {
+  margin-top: calc(var(--header-height));
+  margin-bottom: calc(var(--header-height));
+  }
+
+.spacer200 {
+  height: 60px;
+}
+
+/* Typography */
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.pageTitle {
+	font-weight: 700;
+}
+
+.goBack, .continueNext {
+	font-weight:normal;
+	color: #83A544;
+}
+
+/* Buttons */
+#view .button {
+	font-size: 1rem;
+	font-weight: 600;
+  padding: 8px 10px;
+}
+
+.ui-widget {
+	font-family: 'Poppins', sans-serif;
+}
+
+.ui-state-default {
+	text-transform: unset;
+}
+
+.ui-button.ui-state-default {
+	border-radius: 50px;
+	background-color: #FD7811;
+}
+
+#energyUsage #estimateUsageModal .estimateUsageFields {
+	border: #EDEFEB 2px solid;
+  border-radius: 5px;
+}
+
+#energyUsage #estimateUsageModal .estimateUsageFields.active, #energyUsage #estimateUsageModal .estimateUsageFields:hover {
+	border: #83A544 2px solid;
+	color: #83A544;
+	background-color: #F6F7F4;
+}
+
+.labelToBottom input:valid + label {
+	background: #EDEFEB;
+	color: #212934;
+}
+
+.labelToBottom label {
+  border-radius: 0.25rem;
+  text-transform: unset;
+}
+
+.labelToBottom input:valid {
+	border-color: #EDEFEB;
+}
+
+.labelToBottom input {
+  border-radius: 0.25rem;
+  border: 1px solid;
+}
+
+input:invalid.input-required {
+  box-shadow: none; 
+}
+
+.labelToBottom label[for=in_postal_housenumber], .labelToBottom label[for=in_postal_extension] {
+  padding: 7px 6px;
+}
+
+.labelToBottom input:focus + label {
+  padding: 3px 6px;
+}
+
+/* Offer */
+
+.BuddyRenoRadioButton .inputGroup input:checked ~ label:after {
+	background-color: #83A544;
+	border-color: #83A544;
+}
+
+.offerBlock {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 16px 0px;
+}
+
+.offerBlockContent{
+  background-color: #FFFFFF;
+}
+
+.offerBlockHeader {
+  border-radius: 10px 10px 0 0;
+  font-size:20px;
+}
+
+.BuddyRenoCheckbox .inputGroup label span, .BuddyRenoRadioButton .inputGroup label span {
+  font-size: 13px;
+}
+
+.BuddyRenoCheckbox .inputGroup label:before, .BuddyRenoRadioButton .inputGroup label:before {
+  background-color:#F6F7F4;
+}
+
+.BuddyRenoRadioButton .inputGroup input:checked ~ label {
+  color:#000000;
+}
+
+.BuddyRenoRadioButton .inputGroup label {
+  padding: 12px 10px;
+}
+
+.BuddyRenoRadioButton .inputGroup label:after,.BuddyRenoRadioButton .inputGroup input {
+  right: 10px;
+}
+
+#productChoice .offerBlock, #productChoice .offerBlockContent {
+  height:auto;
+  border-radius: 10px;
+}
+
+/* Iconen naar rechts verplaatsen */
+
+.offerBlockHeader .iconGas, .offerBlockHeader .iconElectricity {
+  margin-left: auto;  
+  margin-right: 30px;
+      display: inline-block;       
+}
+
+.offerBlockHeader {
+    display: flex;                   
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Groene achtergrond voor groen gas */
+
+div.BuddyRenoRadioButton input[value="GN"] + label {
+  background-color: #dde5b6;
+  z-index: unset;
+}
+
+.offerBlockFooter {
+  background: #dde5b6;
+  color: #000000
+}
+
+#productChoice .offerBlockFooter {
+  border-radius: 0 0 10px 10px;
+}
+
+#productChoice .offerBlockHeader.personalOffer {
+  background-color: #83A544;
+}
+
+#productChoice .offerBlockFooter .showPriceDetails {
+  text-decoration: underline solid #83A544;
+}
+
+/* Accordion */
+
+#detailsAccordion .ui-widget-content {
+  background: #FFF;
+}
+
+.ui-accordion section.continueNext {
+  text-decoration: none;
+}
+
+#detailsAccordion.ui-accordion .ui-accordion-header, #offerAccordion h4.accordionHeader, #offerAccordion h4.accordionFooter, #overviewAccordion.ui-accordion .ui-accordion-header {
+  border-radius: 5px;
+}
+
+#offerAccordion h4.accordionFooter {
+  background: #dde5b6;
+  border:none;
+  color:#000000;
+}
+
+#detailsAccordion .ui-widget-content, #offerAccordion.ui-accordion .ui-accordion-header, .ui-widget-content {
+  border:none;
+  }
+
+/* Checkbox */
+
+label[for="in_zsm"] span.asap_info, label[for="in_zsm"] span {
+    color: black;
+}
+
+.BuddyRenoCheckbox .inputGroup input:checked ~ label:after {
+  background-color: #83A544;
+  border:none;
+}
+
+.BuddyRenoCheckbox .inputGroup input[type="checkbox"] + label::after {
+  background-position: 4px 4px;
+}
+
+/* Modal */
+
+.modal-header {
+  border-radius: 10px 10px 0 0;
+  background-color: #83A544;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.close {
+  margin-top: -9px;
+}
+
+/* Calendar */
+
+.ui-widget-header {
+  background-color: #FFF;
+}
+
+.ui-widget-content {
+  background:#FFF;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled {
+  filter: saturate(0);
+}
+
+.ui-datepicker td a, .ui-datepicker td span {
+  width: 30px;
+  height:30px;
+  background: #83A544;
+  padding: 3px;
+}
+
+.ui-datepicker td a:hover {
+  background: #FFC107;
+}
+
+td .ui-datepicker-current-day .ui-state-active, .ui-widget-content .ui-state-active {
+  background: #FFC107;
+}
+
+/* Overview */
+#overviewAccordion div.accordionFooter {
+  background-color: #dde5b6;
+  border:none;
+  border-radius:5px;
+}
+
+#overviewAccordion .showPriceDetails {
+  text-decoration: underline solid 2px #83A544;
+}
+
+#overviewAccordion .ui-state-default {
+  border:none;
+}
+
+#sign_online_yes.active, #sign_online_no.active {
+  box-shadow:none;
+  background:#F6F7F4;
+  border-radius:0;
+}
+
+#sign_online_yes, #sign_online_no {
+  border-radius:0;
+  background:#fff;
+  color:#000;
+}
+
+canvas {
+  border-color: #EDEFEB !Important;
+  border-radius: 5px;
+}
